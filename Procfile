@@ -1,1 +1,1 @@
-worker: pnpm start
+web: pnpm start
