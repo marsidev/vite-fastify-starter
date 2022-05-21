@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
-    "target": "es6",
-    "module": "CommonJS",
+    "target": "es2016",
+    "module": "commonjs",
     "moduleResolution": "node",
     "declaration": true,
     "pretty": true,
@@ -9,18 +9,10 @@
     "strict": true,
     "resolveJsonModule": true,
     "removeComments": true,
-    "newLine": "lf",
-    "noUnusedLocals": true,
-    "noFallthroughCasesInSwitch": true,
-    "useDefineForClassFields": true,
     "forceConsistentCasingInFileNames": true,
     "skipLibCheck": true,
-    "lib": ["esnext"],
-    "allowJs": true,
-    "noEmit": false,
     "esModuleInterop": true,
     "isolatedModules": true,
-    "incremental": true,
     "baseUrl": ".",
     "outDir": "./dist",
     "rootDir": "./src",
@@ -28,7 +20,6 @@
       "@controllers/*": ["src/controllers/*"]
     },
     "noImplicitAny": false,
-    "sourceMap": true,
     "noImplicitReturns": true
   },
   "include": ["**/*.ts", "**/*.tsx"],
