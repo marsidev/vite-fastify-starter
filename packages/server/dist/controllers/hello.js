@@ -19,4 +19,3 @@ const router = (server, opts) => __awaiter(void 0, void 0, void 0, function* () 
     }));
 });
 exports.default = router;
-//# sourceMappingURL=hello.js.map
