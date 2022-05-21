@@ -10,6 +10,7 @@
   "scripts": {
     "dev": "ts-node-dev -r tsconfig-paths/register src/index.ts",
     "start": "node -r ts-node/register/transpile-only -r tsconfig-paths/register ./dist/index.js",
+    "prestart": "tsc --incremental false",
     "lint": "eslint . --ext .js --ext .jsx --ext .ts --ext .tsx",
     "lint-fix": "eslint . --ext .js --ext .jsx --ext .ts --ext .tsx --fix",
     "tsc": "tsc --noEmit --incremental false"
