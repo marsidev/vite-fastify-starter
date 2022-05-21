@@ -21,9 +21,7 @@
     "lint-fix": "pnpm run -r --workspace-concurrency 2 --filter ./packages/server --filter ./packages/client lint-fix",
     "tsc": "pnpm run -r --workspace-concurrency 2 --filter ./packages/server --filter ./packages/client tsc",
     "heroku": "git push heroku HEAD:main",
-    "prebuild": "npm install -g pnpm && pnpm install",
-    "heroku-prebuild": "export NPM_CONFIG_PRODUCTION=false; export NODE_ENV=; NPM_CONFIG_PRODUCTION=false NODE_ENV=development npm install -g pnpm && pnpm install --only=dev --dev",
-    "heroku-postbuild": "export NPM_CONFIG_PRODUCTION=true; export NODE_ENV=production;"
+    "prebuild": "npm install -g pnpm && pnpm install"
   },
   "devDependencies": {
     "@types/node": "^17.0.35",
