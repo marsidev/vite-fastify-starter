@@ -1,1 +1,1 @@
-worker: pnpm start-all
+worker: pnpm start
