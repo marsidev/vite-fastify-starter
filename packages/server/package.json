@@ -9,9 +9,7 @@
   "license": "ISC",
   "scripts": {
     "dev": "ts-node-dev -r tsconfig-paths/register src/index.ts",
-    "start": "pnpm build && pnpm start-dist",
-    "build": "tsc --incremental false",
-    "start-dist": "node -r ts-node/register/transpile-only -r tsconfig-paths/register ./dist/index.js",
+    "start": "node -r ts-node/register/transpile-only -r tsconfig-paths/register ./dist/index.js",
     "lint": "eslint . --ext .js --ext .jsx --ext .ts --ext .tsx",
     "lint-fix": "eslint . --ext .js --ext .jsx --ext .ts --ext .tsx --fix",
     "tsc": "tsc --noEmit --incremental false"

@@ -20,6 +20,7 @@
     "lint": "pnpm run -r --workspace-concurrency 2 --filter ./packages/server --filter ./packages/client lint",
     "lint-fix": "pnpm run -r --workspace-concurrency 2 --filter ./packages/server --filter ./packages/client lint-fix",
     "tsc": "pnpm run -r --workspace-concurrency 2 --filter ./packages/server --filter ./packages/client tsc",
+    "heroku": "git push heroku HEAD:main",
     "prebuild": "npm install -g pnpm && pnpm install"
   },
   "devDependencies": {
