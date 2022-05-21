@@ -1,7 +1,12 @@
-import { Link, Button } from '@chakra-ui/react'
+import { FC } from 'react'
+import { Link, Button, ButtonProps, LinkProps } from '@chakra-ui/react'
 import { BiRightArrowAlt as RightArrow } from 'react-icons/bi'
 
-const LearnButton = ({ href, content, bg, icon, ...rest }) => {
+type LearnButtonProps = ButtonProps & LinkProps & {
+  content: string
+}
+
+const LearnButton: FC<LearnButtonProps> = ({ href, content, bg, leftIcon, ...rest }) => {
   return (
     <Button
       isExternal
@@ -16,7 +21,7 @@ const LearnButton = ({ href, content, bg, icon, ...rest }) => {
       as={Link}
       bg={bg}
       href={href}
-      leftIcon={icon || <RightArrow />}
+      leftIcon={leftIcon || <RightArrow />}
       transition='all 0.2s'
       variant='solid'
       {...rest}
