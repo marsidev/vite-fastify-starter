@@ -16,7 +16,7 @@ server.register(hello, { prefix: '/api/hello' })
 
 const start = async () => {
   try {
-    await server.listen(PORT)
+    await server.listen(PORT, '0.0.0.0')
     console.log(`Server listening on port ${PORT}`)
   } catch (err) {
     server.log.error(err)
