@@ -15,7 +15,7 @@ importers:
       eslint: ^8.15.0
       eslint-config-xo: ^0.41.0
       tslib: ^2.4.0
-      typescript: ^4.6.4
+      typescript: 4.6.4
     devDependencies:
       '@types/node': 17.0.35
       '@typescript-eslint/eslint-plugin': 5.25.0_jorowkvdqu6pwramweg5le7ncu
@@ -43,6 +43,7 @@ importers:
       react: ^18.1.0
       react-dom: ^18.1.0
       react-icons: ^4.3.1
+      typescript: 4.6.4
       vite: ^2.9.9
       vite-tsconfig-paths: ^3.4.1
     dependencies:
@@ -64,6 +65,7 @@ importers:
       eslint: 8.16.0
       eslint-plugin-react: 7.30.0_eslint@8.16.0
       eslint-plugin-react-hooks: 4.5.0_eslint@8.16.0
+      typescript: 4.6.4
 
   packages/server:
     specifiers:
@@ -75,9 +77,9 @@ importers:
       eslint-plugin-node: ^11.1.0
       fastify: ^3.29.0
       ts-node: ^10.7.0
-      ts-node-dev: ^1.1.8
+      ts-node-dev: 1.1.8
       tsconfig-paths: ^4.0.0
-      typescript: ^4.6.4
+      typescript: 4.6.4
     dependencies:
       '@fastify/static': 5.0.2
       cross-env: 7.0.3
@@ -1536,14 +1538,12 @@ packages:
 
   /@types/node/17.0.35:
     resolution: {integrity: sha512-vu1SrqBjbbZ3J6vwY17jBs8Sr/BKA+/a/WtjRG+whKg1iuLFOosq872EXS0eXWILdO36DHQQeku/ZcL6hz2fpg==}
-    dev: true
 
   /@types/parse-json/4.0.0:
     resolution: {integrity: sha512-//oorEZjL6sbPcKUaCdIGlIUeH26mgzimjBB77G6XRgnDl/L5wOnpyBGRe/Mmf5CVW3PwEBE1NjiMZ/ssFh4wA==}
 
   /@types/prop-types/15.7.5:
     resolution: {integrity: sha512-JCB8C6SnDoQf0cNycqd/35A7MjcnK+ZTqE7judS6o7utxUCg6imJg3QK2qzHKszlTjcj2cn+NwMB2i96ubpj7w==}
-    dev: true
 
   /@types/react-dom/18.0.4:
     resolution: {integrity: sha512-FgTtbqPOCI3dzZPZoC2T/sx3L34qxy99ITWn4eoSA95qPyXDMH0ALoAqUp49ITniiJFsXUVBtalh/KffMpg21Q==}
@@ -1557,11 +1557,9 @@ packages:
       '@types/prop-types': 15.7.5
       '@types/scheduler': 0.16.2
       csstype: 3.1.0
-    dev: true
 
   /@types/scheduler/0.16.2:
     resolution: {integrity: sha512-hppQEBDmlwhFAXKJX2KnWLYu5yMfi91yazPb2l+lbJiwW+wdo1gNeRA+3RgNSO39WYX2euey41KEwnqesU2Jew==}
-    dev: true
 
   /@types/strip-bom/3.0.0:
     resolution: {integrity: sha512-xevGOReSYGM7g/kUBZzPqCrR/KYAo+F0yiPc85WFTJa0MSLtyFTVTU6cJu/aV4mid7IffDIWqo69THF2o4JiEQ==}
@@ -3540,7 +3538,6 @@ packages:
 
   /minimist/1.2.6:
     resolution: {integrity: sha512-Jsjnk4bw3YJqYzbdyBiNsPWHPfO++UGG749Cxs6peCu5Xg4nrena6OVxOYxrQTqww0Jmwt+Ref8rggumkTLz9Q==}
-    dev: false
 
   /mkdirp/1.0.4:
     resolution: {integrity: sha512-vVqVZQyf3WLx2Shd0qJ9xuvqgAyKPLAiqITEtqW0oIUjzo3PePDd6fW9iFz30ef7Ysp/oiWqbhszeGWW2T6Gzw==}
@@ -4395,7 +4392,7 @@ packages:
     dependencies:
       chokidar: 3.5.3
       dynamic-dedupe: 0.3.0
-      minimist: 1.2.5
+      minimist: 1.2.6
       mkdirp: 1.0.4
       resolve: 1.22.0
       rimraf: 2.7.1
@@ -4510,7 +4507,6 @@ packages:
     resolution: {integrity: sha512-9ia/jWHIEbo49HfjrLGfKbZSuWo9iTMwXO+Ca3pRsSpbsMbc7/IU8NKdCZVRRBafVPGnoJeFL76ZOAA84I9fEg==}
     engines: {node: '>=4.2.0'}
     hasBin: true
-    dev: true
 
   /unbox-primitive/1.0.2:
     resolution: {integrity: sha512-61pPlCD9h51VoreyJ0BReideM3MDKMKnh6+V9L08331ipq6Q8OFXZYiqP6n/tbHx4s5I9uRhcye6BrbkizkBDw==}

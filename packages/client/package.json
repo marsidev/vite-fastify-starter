@@ -8,6 +8,7 @@
   "license": "ISC",
   "scripts": {
     "dev": "vite",
+    "dev-https": "vite --https",
     "build": "pnpm clean && vite build",
     "preview": "vite preview",
     "start": "vite preview",
@@ -35,6 +36,7 @@
     "@types/react-dom": "^18.0.4",
     "eslint": "^8.15.0",
     "eslint-plugin-react": "^7.30.0",
-    "eslint-plugin-react-hooks": "^4.5.0"
+    "eslint-plugin-react-hooks": "^4.5.0",
+    "typescript": "4.6.4"
   }
 }
