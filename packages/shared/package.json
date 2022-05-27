@@ -1,0 +1,19 @@
+{
+  "author": {
+    "name": "Luis Marsiglia",
+    "email": "marsiglia.business@gmail.com"
+  },
+  "private": true,
+  "name": "@vite-fastify-starter/shared",
+  "version": "1.0.0",
+  "license": "ISC",
+  "main": "./dist/index.js",
+  "devDependencies": {
+    "@types/node": "^17.0.35",
+    "eslint": "^8.16.0",
+    "eslint-plugin-node": "^11.1.0",
+    "ts-node-dev": "1.1.8",
+    "typescript": "4.6.4"
+  },
+  "type": "commonjs"
+}
