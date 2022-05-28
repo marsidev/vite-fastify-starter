@@ -39,7 +39,8 @@
   "pnpm": {
     "overrides": {
       "client": "workspace:*",
-      "server": "workspace:*"
+      "server": "workspace:*",
+      "shared": "workspace:*"
     },
     "peerDependencyRules": {
       "ignoreMissing": [
