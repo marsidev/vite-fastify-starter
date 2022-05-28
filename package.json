@@ -24,8 +24,7 @@
     "lint-fix": "pnpm run --parallel lint-fix",
     "tsc": "pnpm run --parallel tsc",
     "heroku": "git push heroku HEAD:main",
-    "up-all": "pnpm -r up",
-    "preinstall": "npx -y only-allow pnpm"
+    "up-all": "pnpm -r up"
   },
   "devDependencies": {
     "@types/node": "^17.0.36",
