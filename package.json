@@ -42,8 +42,7 @@
     "overrides": {
       "client": "workspace:*",
       "server": "workspace:*",
-      "shared": "workspace:*",
-      "ws-shared": "link:../shared"
+      "shared": "workspace:*"
     },
     "peerDependencyRules": {
       "ignoreMissing": [

@@ -22,7 +22,7 @@
     "@chakra-ui/react": "^2.1.2",
     "@emotion/react": "^11.9.0",
     "@emotion/styled": "^11.8.1",
-    "@vite-fastify-starter/shared": "ws-shared",
+    "@vite-fastify-starter/shared": "workspace:*",
     "@vitejs/plugin-react": "^1.3.2",
     "framer-motion": "^6.3.4",
     "isomorphic-fetch": "^3.0.0",
@@ -39,10 +39,5 @@
     "eslint-plugin-react": "^7.30.0",
     "eslint-plugin-react-hooks": "^4.5.0",
     "typescript": "4.6.4"
-  },
-  "pnpm": {
-    "overrides": {
-      "ws-shared": "link:../shared"
-    }
   }
 }

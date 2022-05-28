@@ -16,7 +16,7 @@
   },
   "dependencies": {
     "@fastify/static": "^5.0.2",
-    "@vite-fastify-starter/shared": "ws-shared",
+    "@vite-fastify-starter/shared": "workspace:*",
     "cross-env": "^7.0.3",
     "dotenv": "^16.0.1",
     "fastify": "^3.29.0",
@@ -30,10 +30,5 @@
     "ts-node-dev": "1.1.8",
     "typescript": "4.6.4"
   },
-  "type": "commonjs",
-  "pnpm": {
-    "overrides": {
-      "ws-shared": "link:../shared"
-    }
-  }
+  "type": "commonjs"
 }
