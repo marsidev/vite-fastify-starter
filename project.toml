@@ -1,2 +1,2 @@
 [[build.buildpacks]]
-uri = "https://raw.githubusercontent.com/marsidev/heroku-buildpack-pnpm/main/bin/compile"
+uri = "gcr.io/paketo-buildpacks/nodejs"
