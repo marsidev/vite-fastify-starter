@@ -1,2 +1,2 @@
 [[build.buildpacks]]
-uri = "https://github.com/michalzan/heroku-buildpack-pnpm"
+uri = "https://github.com/marsidev/heroku-buildpack-pnpm.git"
