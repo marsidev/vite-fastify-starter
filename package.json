@@ -24,7 +24,6 @@
     "lint-fix": "pnpm run --parallel lint-fix",
     "tsc": "pnpm run --parallel tsc",
     "heroku": "git push heroku HEAD:main",
-    "prebuild": "npm install -g pnpm && pnpm install",
     "up-all": "pnpm -r up",
     "preinstall": "npx -y only-allow pnpm"
   },
