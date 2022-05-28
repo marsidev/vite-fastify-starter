@@ -1,5 +1,6 @@
 import '@styles/index.css'
 import 'isomorphic-fetch'
+
 import { createRoot } from 'react-dom/client'
 import theme from '@lib/theme'
 import { ChakraProvider } from '@chakra-ui/react'
