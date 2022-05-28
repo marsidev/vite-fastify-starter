@@ -1,2 +1,2 @@
 [[build.buildpacks]]
-uri = "ghcr.io/railwayapp/nixpacks:node"
+uri = "ghcr.io/railwayapp/nixpacks:debian-1652802522"
