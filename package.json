@@ -15,14 +15,14 @@
   "scripts": {
     "build": "pnpm --filter client build",
     "start": "pnpm --filter server start",
-    "dev": "pnpm run -r --workspace-concurrency 2 --filter server --filter client dev",
+    "dev": "pnpm run --parallel --filter server --filter client dev",
     "dev-server": "pnpm --filter server dev",
     "dev-client": "pnpm --filter client dev",
     "dev-client-https": "pnpm --filter client dev-https",
     "start-all": "pnpm build && pnpm start",
-    "lint": "pnpm run -r --workspace-concurrency 2 --filter server --filter client lint",
-    "lint-fix": "pnpm run -r --workspace-concurrency 2 --filter server --filter client lint-fix",
-    "tsc": "pnpm run -r --workspace-concurrency 2 --filter server --filter client tsc",
+    "lint": "pnpm run --parallel lint",
+    "lint-fix": "pnpm run --parallel lint-fix",
+    "tsc": "pnpm run --parallel tsc",
     "heroku": "git push heroku HEAD:main",
     "prebuild": "npm install -g pnpm && pnpm install",
     "up-all": "pnpm -r up"

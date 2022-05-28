@@ -13,8 +13,8 @@
     "preview": "vite preview",
     "start": "vite preview",
     "clean": "npx rimraf ../../public",
-    "lint": "eslint . --ext .js --ext .jsx --ext .ts --ext .tsx",
-    "lint-fix": "eslint . --ext .js --ext .jsx --ext .ts --ext .tsx --fix",
+    "lint": "eslint . --ext .ts --ext .tsx",
+    "lint-fix": "eslint . --ext .ts --ext .tsx --fix",
     "tsc": "tsc --noEmit --incremental false"
   },
   "dependencies": {
