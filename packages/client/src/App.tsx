@@ -1,6 +1,5 @@
 import type { FlexProps } from '@chakra-ui/react'
 
-import 'isomorphic-fetch'
 import { FC, useState } from 'react'
 import { Button, Flex, Stack, Heading } from '@chakra-ui/react'
 import ReactLogo from '@components/ReactLogo'
