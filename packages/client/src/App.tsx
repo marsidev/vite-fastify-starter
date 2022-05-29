@@ -6,7 +6,6 @@ import ReactLogo from '@components/ReactLogo'
 import LearnButton from '@components/LearnButton'
 import { FaGithub } from 'react-icons/fa'
 import { SiChakraui, SiVite, SiReact, SiFastify } from 'react-icons/si'
-import { isTruthy } from '@vite-fastify-starter/shared'
 
 const App: FC<FlexProps> = ({ ...props }) => {
   const [count, setCount] = useState(0)
@@ -14,7 +13,6 @@ const App: FC<FlexProps> = ({ ...props }) => {
 
   const fetchData = async () => {
     const data = await fetch('/api/hello').then(r => r.json())
-    console.log(isTruthy(data))
     setData(data)
   }
 
