@@ -3,7 +3,7 @@ ervices:
   name: client
   env: static
   buildCommand: yarn; cd packages/client; yarn build
-  staticPublishPath: ./public/
+  staticPublishPath: ./public
   buildFilter:
     paths:
     # build and deploy frontend if any js file under the static dir changes
