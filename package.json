@@ -13,32 +13,32 @@
     "packages/*"
   ],
   "scripts": {
-    "build": "pnpm --filter client build",
-    "start": "pnpm --filter server start",
-    "dev": "pnpm run --parallel --filter server --filter client dev",
-    "dev-server": "pnpm --filter server dev",
-    "dev-client": "pnpm --filter client dev",
-    "dev-client-https": "pnpm --filter client dev-https",
-    "start-all": "pnpm build && pnpm start",
+    "build": "pnpm run --parallel build",
+    "start": "pnpm --filter=server start",
+    "dev": "run-p -l dev:server dev:client",
+    "dev:https": "run-p -l dev:server dev:client:https",
+    "dev:server": "pnpm --filter=server dev",
+    "dev:client": "pnpm --filter=client dev",
+    "dev:client:https": "pnpm --filter=client dev:https",
+    "start:all": "pnpm build && pnpm start",
     "lint": "pnpm run --parallel lint",
-    "lint-fix": "pnpm run --parallel lint-fix",
+    "lint:fix": "pnpm run --parallel lint:fix",
     "tsc": "pnpm run --parallel tsc",
-    "heroku": "git push heroku HEAD:main",
-    "up-all": "pnpm -r up",
     "prebuild": "npm i -g pnpm && pnpm i"
   },
   "devDependencies": {
-    "@types/node": "^17.0.36",
+    "@types/node": "^18.0.0",
     "@typescript-eslint/eslint-plugin": "^5.26.0",
     "@typescript-eslint/parser": "^5.26.0",
     "cz-conventional-changelog": "^3.3.0",
     "eslint": "^8.16.0",
     "eslint-config-xo": "^0.41.0",
+    "npm-run-all": "^4.1.5",
     "rimraf": "^3.0.2",
     "tslib": "^2.4.0",
-    "typescript": "4.6.4"
+    "typescript": "4.7.4"
   },
-  "packageManager": "pnpm@7.1.6",
+  "packageManager": "pnpm@7.3.0",
   "pnpm": {
     "overrides": {
       "client": "workspace:*",
@@ -46,9 +46,6 @@
       "shared": "workspace:*"
     },
     "peerDependencyRules": {
-      "ignoreMissing": [
-        "@babel/core"
-      ],
       "allowedVersions": {
         "react": "18",
         "react-dom": "18"
@@ -67,6 +64,7 @@
     "react",
     "chakra-ui",
     "template",
+    "boilerplate",
     "typescript"
   ]
 }

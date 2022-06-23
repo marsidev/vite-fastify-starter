@@ -4,6 +4,8 @@
     "outDir": "./dist",
     "lib": ["dom", "dom.iterable", "esnext"],
     "types": ["vite/client", "node"],
+    "baseUrl": ".",
+    "module": "es2022",
     "paths": {
       "@/*": ["./src/*"],
       "@assets/*": ["./src/assets/*"],
@@ -16,6 +18,5 @@
     
   },
   "include": ["./src"],
-  "exclude": ["node_modules", "./dist/**/*"],
-  "moduleResolution": ["node_modules", "node"]
+  "exclude": ["node_modules", "./dist/**/*"]
 }

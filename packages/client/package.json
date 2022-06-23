@@ -7,37 +7,38 @@
   "version": "1.0.0",
   "license": "ISC",
   "scripts": {
-    "dev": "vite",
-    "dev-https": "vite --https",
-    "build": "pnpm clean && vite build",
-    "preview": "vite preview",
+    "dev": "vite --host",
+    "dev:https": "pnpm dev --https",
+    "build": "pnpm clean && pnpm tsc && vite build",
     "start": "vite preview",
-    "clean": "npx rimraf ../../public",
-    "lint": "eslint . --ext .ts --ext .tsx",
-    "lint-fix": "eslint . --ext .ts --ext .tsx --fix",
-    "tsc": "tsc --noEmit --incremental false"
+    "clean": "rimraf ../../dist",
+    "lint": "eslint .",
+    "lint:fix": "pnpm lint --fix",
+    "tsc": "tsc --noEmit"
   },
   "dependencies": {
-    "@babel/core": "^7.18.2",
-    "@chakra-ui/react": "^2.1.2",
-    "@emotion/react": "^11.9.0",
+    "@babel/core": "^7.18.5",
+    "@chakra-ui/react": "^2.2.1",
+    "@chakra-ui/utils": "^2.0.2",
+    "@emotion/react": "^11.9.3",
     "@emotion/styled": "^11.8.1",
     "@vite-fastify-starter/shared": "workspace:*",
     "@vitejs/plugin-react": "^1.3.2",
     "framer-motion": "^6.3.4",
     "isomorphic-fetch": "^3.0.0",
-    "react": "^18.1.0",
-    "react-dom": "^18.1.0",
-    "react-icons": "^4.3.1",
-    "vite": "^2.9.9",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-icons": "^4.4.0",
+    "vite": "^2.9.12",
     "vite-tsconfig-paths": "^3.5.0"
   },
   "devDependencies": {
-    "@types/react": "^18.0.9",
+    "@types/react": "^18.0.14",
     "@types/react-dom": "^18.0.5",
     "eslint": "^8.16.0",
     "eslint-plugin-react": "^7.30.0",
     "eslint-plugin-react-hooks": "^4.5.0",
-    "typescript": "4.6.4"
+    "rimraf": "^3.0.2",
+    "typescript": "4.7.4"
   }
 }
