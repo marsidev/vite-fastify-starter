@@ -11,7 +11,7 @@
     "dev:https": "pnpm dev --https",
     "build": "pnpm clean && pnpm tsc && vite build",
     "start": "vite preview",
-    "clean": "rimraf ../../dist",
+    "clean": "rimraf ../../public",
     "lint": "eslint .",
     "lint:fix": "pnpm lint --fix",
     "tsc": "tsc --noEmit"
@@ -29,7 +29,7 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.4.0",
-    "vite": "^3.0.0-beta.1",
+    "vite": "^2.9.12",
     "vite-tsconfig-paths": "^3.5.0"
   },
   "devDependencies": {
